@@ -1,0 +1,167 @@
+page {
+  background: #fbfbfb;
+  height: auto;
+  overflow: hidden;
+}
+
+.vertical {
+  width: 100%;
+  height: 95vh;
+  margin: 30rpx 0;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 28rpx;
+  
+  .handRight {
+    display: inline-flex;
+    align-items: center;
+    .handTitle {
+      transform: rotate(90deg);
+      flex: 1;
+      color: #666;
+    }
+  }
+  
+  .handCenter {
+    border: 4rpx dashed #e9e9e9;
+    flex: 5;
+    overflow: hidden;
+    box-sizing: border-box;
+    .handWriting {
+      background: #fff;
+      width: 100%;
+      height: 95vh;
+    }
+  }
+  
+  .handBtn {
+    height: 95vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1;
+    button {
+      font-size: 28rpx;
+    }
+    .delBtn {
+      position: absolute;
+      top: 250rpx;
+      left: 0rpx;
+      transform: rotate(90deg);
+      color: #666;
+      image {
+        position: absolute;
+        top: 13rpx;
+        left: 25rpx;
+      }
+    }
+    .subBtn {
+      position: absolute;
+      bottom: 52rpx;
+      left: -3rpx;
+      display: inline-flex;
+      transform: rotate(90deg);
+      background: #008ef6;
+      color: #fff;
+      margin-bottom: 30rpx;
+      text-align: center;
+      justify-content: center;
+    }
+    .black-select {
+      width: 60rpx;
+      height: 60rpx;
+      position: absolute;
+      top: 30rpx;
+      left: 25rpx;
+      &.color_select {
+        width: 90rpx;
+        height: 90rpx;
+        top: 30rpx;
+        left: 10rpx;
+      }
+    }  
+    .red-select {
+      width: 60rpx;
+      height: 60rpx;
+      position: absolute;
+      top:140rpx;
+      left:25rpx;
+      &.color_select {
+        width: 90rpx;
+        height: 90rpx;
+        top: 120rpx;
+        left: 10rpx;
+      }
+    }
+  }
+}
+.horizontal {
+  width: 100%;
+  overflow: hidden;
+  font-size: 28rpx;
+  .handRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .handTitle {
+      color: #666;
+    }
+  }
+  .handCenter {
+    margin: 30rpx;
+    border: 4rpx dashed #e9e9e9;
+    overflow: hidden;
+    box-sizing: border-box;
+    .handWriting {
+      background: #fff;
+      height: 60vh;
+      width: 100%;
+    }
+  }
+  .handBtn {
+    padding: 0 45rpx;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    button {
+      font-size: 28rpx;
+      display: inline-block;
+    }
+    button + button{
+      margin-left: 15rpx;
+    }
+    .delBtn {
+      color: #666;
+    }
+    .subBtn {
+      background: #008ef6;
+      color: #fff;
+    }
+    .black-select {
+      width: 60rpx;
+      height: 60rpx;
+      border: 15rpx solid transparent;
+      &.color_select {
+        width: 90rpx;
+        height: 90rpx;
+        border: none;
+      }
+    }  
+    .red-select {
+      width: 60rpx;
+      height: 60rpx;
+      border: 15rpx solid transparent;
+      &.color_select {
+        width: 90rpx;
+        height: 90rpx;
+        border: none;
+      }
+    }
+  }
+}
+
+
